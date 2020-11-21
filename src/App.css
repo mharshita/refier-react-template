@@ -1,38 +1,437 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media(min-width: 60rem){ 
+  body{
+    overflow-x: hidden;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Navbar */
+/* nav{
+  overflow-x: hidden;
+} */
+
+.navbar-toggler{
+  background-color: black;
+}
+
+.logo{
+  margin-left: 3em;
+  font-size: 2em;
+  margin-top: 0.6em;
+}
+
+.navtext{
+  margin-left: 10em;
+  margin-top: 1.5em;
+}
+
+.navtext:hover{
+  color: blue !important;
+}
+
+.marketplace{
+  color: rgb(3, 3, 219) !important;
+  text-decoration: underline !important;
+  text-underline-position: under;
+  font-weight: bold;
+  margin-left: 8em;
+  margin-top: 1.5em;
+  overflow-x: hidden;
+}
+
+.login{
+  color: blue;
+}
+
+.login:hover{
+  font-weight: bold;
+  text-decoration: none;
+  color: blue;
+  border-radius: 2em;
+  box-shadow: 5px 5px 8px 5px rgb(235, 229, 229) ;
+}
+
+/*Second*/
+
+/*Explore*/
+@media(max-width: 60rem){
+  .span-exp-1{
+    display: none;
+  }
+}
+
+@media(min-width: 60rem){
+  .mobile-exp-1{
+    display: none;
+  }
+}
+
+.card-a{
+  background-color: rgb(238, 237, 237);
+  width: 12%;
+  margin-top: 4em;
+  position: fixed;
+  margin-left: 1em;
+}
+
+@media(max-width: 59rem){
+  .card-a{
+    display: none;
+  }
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  padding-top: 0.6em; 
+  padding-bottom: 0.6em;
+  text-align: left;
+}
+
+.list-item{
+  color: black;
+  /* margin-left: -2em; */
+}
+
+@media(max-width: 59rem){
+  .dec{
+    display: none;
+  }
+}
+
+.list-item:hover{
+  text-decoration: none;
+  color: black;
+}
+
+/* .explore-li {
+  background-color: orange;
+} */
+
+.top-img{
+  width: 50%;
+  height: 50%;
+}
+
+@media(min-width: 60rem){
+  .top-img{
+    display: none;
+  }
+}
+
+.explore{
+  overflow-x: hidden;
+}
+
+.explore-content{
+  padding-left: 12em;
+  padding-top: 3em;
+}
+
+@media(max-width: 60rem){
+  .explore-content{
+    padding-left: 1em;
+  }
+}
+
+.explore-img-blue{
+  height: 50%;
+  width: 125%;
+  z-index: auto;
+}
+
+/* .explore-right{ */
+  /* margin-right: 3em; */
+/* } */
+
+.explore-heading{
+  margin-left: 1em;
+}
+
+.explore-para{
+  font-size: 1.2em;
+  display: block;
+  margin-left: 2em;
+}
+
+.explore-img{
+  width: 80%;
+  height: 90%;
+  margin-top: -32em;
+  z-index: 1;
+}
+
+.explore-content h4{
+  margin-left: 1.4em;
+  text-decoration: underline;
+  text-decoration-color: rgb(235, 230, 230);
+  text-underline-position: under;
+}
+
+.explore-content a{
+  color: black;
+  margin-left: 30em;
+}
+
+.exp-content{
+  margin-top: -15em;
+}
+
+.offer-para{
+  /* font-weight: bold; */
+  margin-top: 1.5em;
+  margin-left: 3em;
+  margin-bottom: 5em;
+}
+
+.card-a1{
+  background-color: rgb(240, 248, 248);
+  width: 90%;
+  padding: 2.5em;
+  height: 50%;
+}
+
+.mail-img{
+  width: 90%;
+  height: 90%;
+  margin-left: 3em;
+}
+
+.p1{
+  font-size: 1.2em;
+  display: block;
+}
+
+.form-second{
+  padding-top: 2em;
+}
+
+.input-second{
+  width: 15em;
+  height: 3em;
+  /* border-color: rgb(204, 201, 201); */
+}
+
+.submit-second{
+  height: 3em;
+  margin-left: 1em;
+}
+
+.third-head{
+  margin-top: 6em;
+}
+
+.third-h{
+  margin-left: 0 !important;
+  font-size: 1.3em;
+}
+
+.card-r{
+  background-color: rgb(253, 219, 236);
+  margin-left: 0.4em;
+  margin-top: 1.5em;
+  width: 20%;
+  overflow-x: hidden;
+}
+
+.card-head{
+  color: blue !important;
+  font-weight: bold;
+  font-size: 1em;
+  /* text-align: center; */
+}
+
+.card-head:hover{
+  text-decoration: none;
+}
+
+.card-body p{
+  margin-bottom: 2em;
+}
+
+.card-info{
+  font-weight: bold;
+}
+
+.card-btn{
   color: white;
+  border-radius: 2em;
+  display: none;
+  margin-bottom: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+.card:hover .card-btn{
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-img{
+  width: 15%;
+  height: 15%;
+}
+
+/* .img-2{
+  width: 20% !important;
+  height: 20% !important;
+} */
+
+/*Webinars*/
+#webinars{
+  display: none;
+}
+
+.webinar-head{
+  margin-left: 5em;
+  text-decoration: underline;
+  text-decoration-color: rgb(235, 230, 230);
+  text-underline-position: under;
+}
+
+/* Footer */
+.footer{
+  background-color:  rgb(240, 248, 248);
+  bottom: 0;
+  width: 100%;
+  margin-top: 10em;
+  overflow-x: hidden;
+}
+
+.footer-head{
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: orange;
+  text-decoration-thickness: 0.5px;
+  /* border-bottom: 1px solid orange; */
+  padding-bottom: 0.3em;
+  text-align: center;
+  padding-top: 2em;
+}
+
+.contact-div{
+  padding-top: 3em;
+  padding-left: 14em;
+  padding-right: 14em;
+  padding-bottom: 1em;
+}
+
+.form-footer{
+  padding-left: 3em;
+  padding-right: 3em;
+  /* padding-top: 2em; */
+  padding-bottom: 2em;
+  background-color: white;
+  font-weight: bold;
+}
+
+label{
+  margin-top: 2em;
+}
+
+form-field{
+  font-weight: bold;
+}
+
+.btn-submit{
+  background-color: rgba(20, 20, 243, 0.856);
+  font-weight: bold;
+  margin-top: 2em;
+  border-radius: 2em;
+  text-align: center;
+  margin-left: 20em;
+}
+
+.btn-submit:hover{
+  box-shadow: 5px 5px 8px 5px rgb(235, 229, 229) ;
+}
+
+.call{
+  background-color: white;
+  margin-top: 4em;
+  border-radius: 3em;
+  width: 60%;
+  padding: 0.5em;
+}
+
+.mail{
+  background-color: white;
+  margin-top: 4em;
+  border-radius: 3em;
+  width: 70%;
+  margin-left: 7em;
+  padding: 0.5em;
+}
+
+.call p {
+  text-align: center;
+  color: blue;
+  font-size: 1.1em;
+}
+
+.mail p {
+  text-align: center;
+  color: blue;
+  font-size: 1.1em;
+}
+
+.call a{
+  color: rgb(192, 183, 183);
+  margin-left: 2.5em;
+  font-size: 1.1em;
+}
+
+.call a:hover{
+  text-decoration: none;
+}
+
+.mail a{
+  color: rgb(192, 183, 183);
+  margin-left: 4em;
+  font-size: 1.1em;
+}
+
+.mail a:hover{
+  text-decoration: none;
+}
+
+.social-icons{
+  padding: 2em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 30px !important;
+  /* width: 30px; */
+  text-align: center;
+  text-decoration: none;
+  margin-left: 2em;
+}
+
+.fa-linkedin{
+  color:  rgb(220, 245, 246);
+  background-color: blue;
+  margin-left: 6em;
+}
+
+.fa-facebook{
+  color:  rgb(220, 245, 246);
+  background-color: blue;
+}
+
+.fa-twitter{
+  color: blue;
+}
+
+.fa-instagram{
+  color: blue;
+}
+
+.fa-youtube{
+  color: blue;
+}
+
+.last{
+  color: blue;
+  text-align: center;
 }
