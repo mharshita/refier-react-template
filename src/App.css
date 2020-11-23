@@ -4,7 +4,7 @@
   }
 }
 
-/* Navbar */
+/*----------------------------------------- Navbar----------------------------------- */
 /* nav{
   overflow-x: hidden;
 } */
@@ -50,9 +50,10 @@
   box-shadow: 5px 5px 8px 5px rgb(235, 229, 229) ;
 }
 
-/*Second*/
+/*-------------------------------------------Second-----------------------------------*/
 
-/*Explore*/
+/*-------------------------------------------Explore--------------------------------*/
+
 @media(max-width: 60rem){
   .span-exp-1{
     display: none;
@@ -275,19 +276,97 @@ li{
   height: 20% !important;
 } */
 
-/*Webinars*/
+/*--------------------------Experts and Organizations--------------------------*/
+#exp-org{
+  display: none;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.hidden{
+  display: none;
+}
+
+.card:hover .hidden{
+  display: block;
+}
+
+.card-btn1{
+  color: blue;
+  background-color: transparent;
+  border-color: blue;
+  padding: 0.2em !important;
+  font-size: 0.8em;
+}
+
+.card-btn1:hover{
+  color: white;
+  background-color: blue;
+}
+
+.card-btn2{
+  color: orange;
+  background-color: transparent;
+  border-color: orange;
+  padding: 0.2em !important;
+  font-size: 0.8em;
+  margin-left: 1em;
+}
+
+.card-btn2:hover{
+  color: white;
+  background-color: orange;
+}
+
+.btn1{
+  margin-top: 1em;
+  float: right;
+}
+
+.card-rn{
+  margin-left: 15em;
+}
+
+.clr{
+  background-color: lightblue !important;
+}
+
+/*----------------------------------Webinars-----------------------------------*/
 #webinars{
   display: none;
 }
 
 .webinar-head{
-  margin-left: 5em;
+  margin-left: 10em;
   text-decoration: underline;
   text-decoration-color: rgb(235, 230, 230);
   text-underline-position: under;
 }
 
-/* Footer */
+.card-r1{
+  background-color: rgb(253, 219, 236);
+  margin-left: 15em;
+  margin-top: 1.5em;
+  width: 20%;
+  overflow-x: hidden;
+}
+
+.webinar-head2{
+  margin-left: 10em;
+  text-decoration: underline;
+  text-decoration-color: rgb(235, 230, 230);
+  text-underline-position: under;
+  margin-top: 2em;
+}
+
+/*----------------------------------Courses------------------------------------------*/
+#courses{
+  display: none;
+}
+
+/*---------------------------------- Footer------------------------------------------ */
 .footer{
   background-color:  rgb(240, 248, 248);
   bottom: 0;
@@ -408,15 +487,27 @@ form-field{
   margin-left: 2em;
 }
 
+.fa:hover{
+  text-decoration: none;
+}
+
 .fa-linkedin{
   color:  rgb(220, 245, 246);
   background-color: blue;
   margin-left: 6em;
 }
 
+.fa-linkedin:hover{
+  color:  rgb(220, 245, 246);
+}
+
 .fa-facebook{
   color:  rgb(220, 245, 246);
   background-color: blue;
+}
+
+.fa-facebook:hover{
+  color:  rgb(220, 245, 246);
 }
 
 .fa-twitter{
